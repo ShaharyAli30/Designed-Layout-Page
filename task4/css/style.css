@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+} 
+
+html,body{
+   
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.lnavr{
+    display: flex;
+    align-items: center;
+}
+.lnavr a{
+    margin-right: 20px;
+   text-decoration: none;
+   color: black;
+   font-weight: 500 ;
+}
+.left .text-centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-centered h1{
+    font-size: 70px;
+    font-weight: 700;
+    
+}
+.text-centered p{
+    opacity: .6;
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.text-centered a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px ;
+    font-size: 19 px;
+    font-weight: 600;
+    opacity: .6;
+    
+
+}
+.left{
+    position: relative; 
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    
+}
+.rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: aquamarine;
+}
+.rbottom{
+    width: 100%;
+    height: 50%;
+    background: url(https://images.pexels.com/photos/39351/purple-grapes-vineyard-napa-valley-napa-vineyard-39351.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover; 
+    background-position: center;
+}
+.rtopleft{
+    width: 55%;
+    height: 100%;
+    background: url(https://images.pexels.com/photos/1295567/pexels-photo-1295567.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.rtopright{
+    width: 45%;
+    height: 100%;
+    background: url(https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover; 
+    background-position: center;
+}
+@media (max-width:768px){
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .rtop{
+        flex-direction: column;
+    }
+    .rtopright{
+        width: 100%;
+
+    }
+    .rtopleft{
+        width: 100%;
+
+    }
+}
